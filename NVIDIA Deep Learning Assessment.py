@@ -39,8 +39,8 @@ import caffe
 import cv2
 import sys
 
-MODEL_JOB_DIR = '/dli/data/digits/20190926-221500-abfc'  ## Set this to be the job number for your model
-DATASET_JOB_DIR = '/dli/data/digits/20190926-220654-3c91'  ## Set this to be the job number for your dataset
+MODEL_JOB_DIR = '/dli/data/digits/20200511-181811-1198'  ## Set this to be the job number for your model
+DATASET_JOB_DIR = '/dli/data/digits/20200511-181500-9fd9'  ## Set this to be the job number for your dataset
 
 get_ipython().system(u'ls $MODEL_JOB_DIR')
 
