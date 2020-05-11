@@ -39,8 +39,8 @@ import caffe
 import cv2
 import sys
 
-MODEL_JOB_DIR = '/dli/data/digits/20190926-221500-abfc'  ## Set this to be the job number for your model
-DATASET_JOB_DIR = '/dli/data/digits/20190926-220654-3c91'  ## Set this to be the job number for your dataset
+MODEL_JOB_DIR = '/dli/data/digits/20200511-181500-9fd9'  ## Set this to be the job number for your model
+DATASET_JOB_DIR = '/dli/data/digits/20200511-181811-1198'  ## Set this to be the job number for your dataset
 
 get_ipython().system(u'ls $MODEL_JOB_DIR')
 
@@ -100,3 +100,5 @@ if __name__ == "__main__":
 get_ipython().system(u'python submission.py \'/dli/data/whale/data/train/face/w_1.jpg\'  #This should return "whale" at the very bottom')
 get_ipython().system(u'python submission.py \'/dli/data/whale/data/train/not_face/w_1.jpg\'  #This should return "not whale" at the very bottom')
 
+!python submission.py '/dli/data/whale/data/train/face/w_1.jpg' #This should return "whale" at the very bottom of the output.
+!python submission.py '/dli/data/whale/data/train/not_face/w_1.jpg' #This should return "not whale" at the very bottom of the output.
