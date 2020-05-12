@@ -1,3 +1,4 @@
+!ls [directorypath] prints the files in a given directory
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -39,8 +40,8 @@ import caffe
 import cv2
 import sys
 
-MODEL_JOB_DIR = '/dli/data/digits/20190926-221500-abfc'  ## Set this to be the job number for your model
-DATASET_JOB_DIR = '/dli/data/digits/20190926-220654-3c91'  ## Set this to be the job number for your dataset
+MODEL_JOB_DIR = '/dli/data/digits/20200512-033523-4e7f'  ## Set this to be the job number for your model
+DATASET_JOB_DIR = '/dli/data/digits/20200512-032938-6859'  ## Set this to be the job number for your dataset
 
 get_ipython().system(u'ls $MODEL_JOB_DIR')
 
@@ -99,4 +100,5 @@ if __name__ == "__main__":
 
 get_ipython().system(u'python submission.py \'/dli/data/whale/data/train/face/w_1.jpg\'  #This should return "whale" at the very bottom')
 get_ipython().system(u'python submission.py \'/dli/data/whale/data/train/not_face/w_1.jpg\'  #This should return "not whale" at the very bottom')
-
+!python submission.py '/dli/data/whale/data/train/face/w_1.jpg'
+!python submission.py '/dli/data/whale/data/train/not_face/w_1.jpg'
